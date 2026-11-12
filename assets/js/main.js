@@ -152,8 +152,10 @@
       if (e.iscrizione) {
         var a = el("a", "btn btn--primary", e.formato === "Newsletter" ? "Iscriviti alla newsletter" : "Iscriviti");
         a.href = e.iscrizione;
-        a.target = "_blank";
-        a.rel = "noopener";
+        if (/^https?:/.test(e.iscrizione)) {
+          a.target = "_blank";
+          a.rel = "noopener";
+        }
         actions.appendChild(a);
       }
       (e.materiali || []).forEach(function (mt) {
