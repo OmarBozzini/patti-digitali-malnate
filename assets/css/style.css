@@ -160,8 +160,15 @@ a:hover { color: var(--orange-deep); }
   gap: 1rem;
   min-height: 4.25rem;
 }
-.brand { display: block; line-height: 0; }
-.brand img { height: 2.75rem; width: auto; }
+.brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+.brand img { height: 2.5rem; width: auto; }
+.brand__place {
+  padding-left: 0.7rem;
+  border-left: 2px solid var(--peach);
+  font: 800 1.2rem/1 var(--display);
+  letter-spacing: -0.01em;
+  color: var(--navy);
+}
 
 .nav__toggle {
   display: inline-flex;
@@ -217,7 +224,8 @@ html:not(.js) .nav__list { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
 html:not(.js) .nav__cta { display: none; }
 
 @media (min-width: 60rem) {
-  .brand img { height: 2.9rem; }
+  .brand img { height: 2.75rem; }
+  .brand__place { font-size: 1.45rem; }
   .nav__toggle { display: none; }
   .js .nav__list,
   .js .nav[data-open="true"] .nav__list {
