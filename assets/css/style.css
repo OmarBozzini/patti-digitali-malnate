@@ -743,6 +743,8 @@ html:not(.js) .nav__cta { display: none; }
 .howto__steps li { display: grid; grid-template-columns: 2.5rem 1fr; gap: 0.9rem; align-items: start; }
 .howto__steps p { margin: 0; padding-top: 0.1rem; max-width: 34rem; }
 .gmock { margin: 0; display: grid; gap: 0.75rem; max-width: 26rem; }
+.gmock__link { display: block; border-radius: var(--r-s); text-decoration: none; color: inherit; }
+.gmock__link:hover .gmock__btn { background: var(--navy); }
 .gmock__bar {
   display: flex;
   align-items: center;
@@ -758,7 +760,6 @@ html:not(.js) .nav__cta { display: none; }
   display: grid;
   justify-items: start;
   gap: 0.35rem;
-  margin-top: -0.75rem;
   padding: 1.5rem;
   background: var(--white);
   border: 1px solid var(--line);
