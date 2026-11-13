@@ -217,13 +217,14 @@ a:hover { color: var(--orange-deep); }
 .js .nav[data-open="true"] .nav__link { padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
 .js .nav[data-open="true"] .nav__link[aria-current="page"] { box-shadow: none; color: var(--orange-deep); }
 .nav__cta { margin-top: 1rem; }
+.nav__cta + .nav__cta { margin-top: 0.75rem; }
 .nav__cta .btn { width: 100%; }
 html:not(.js) .site-header__bar { flex-wrap: wrap; padding-block: 0.5rem; }
 html:not(.js) .nav__toggle { display: none; }
 html:not(.js) .nav__list { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
 html:not(.js) .nav__cta { display: none; }
 
-@media (min-width: 60rem) {
+@media (min-width: 72rem) {
   .brand img { height: 2.75rem; }
   .brand__place { font-size: 1.45rem; }
   .nav__toggle { display: none; }
@@ -240,8 +241,9 @@ html:not(.js) .nav__cta { display: none; }
   }
   .nav__link,
   .js .nav[data-open="true"] .nav__link { padding: 0.5rem 0; border: 0; }
-  .nav__cta { margin: 0; }
-  .nav__cta .btn { width: auto; min-height: 2.75rem; padding-inline: 1.2rem; }
+  .nav__cta,
+  .nav__cta + .nav__cta { margin: 0; }
+  .nav__cta .btn { width: auto; min-height: 2.75rem; padding-inline: 1.2rem; white-space: nowrap; }
 }
 
 /* ---------- Sezioni ---------- */
