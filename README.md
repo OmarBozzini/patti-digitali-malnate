@@ -40,7 +40,7 @@ poi apri http://localhost:8000.
 - Colori: blu notte `#13294B`, arancio `#EE7D1B`, pesca `#F4B27A` / `#FCE7D3`, crema `#FBF8F3`, azzurro `#E3F0FA`.
 - Caratteri: Bricolage Grotesque (titoli) e Figtree (testi), ospitati nel sito (`assets/fonts/`), senza richieste a Google.
 - Nessuna foto di persone o bambini: solo illustrazioni e icone.
-- Il sito non usa cookie né strumenti di tracciamento.
+- Il sito non usa cookie. Conta le visite in forma anonima (statistiche di Netlify), senza tracciare le persone.
 
 ## Pubblicazione
 
